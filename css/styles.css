@@ -139,7 +139,7 @@ footer {
     padding: 110px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     place-items: center;
     margin-left: 80px;
 }
@@ -148,7 +148,8 @@ footer {
     padding: 20px;
     color: black;
     font-size: 2.50rem;
-    grid-column: 2;
+    grid-column-start: 2;
+    grid-column-end: 5;
 }
 
 .secondary_bottom_nav_links:hover {
@@ -385,6 +386,9 @@ li.faqs_grid_item_left {
         padding: 60px;
         margin-top: 15px;
         margin-left: 0px;
+        place-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .responsive_span {
